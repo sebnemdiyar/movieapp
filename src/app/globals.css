@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.imgContainer > * {
+  flex: 1 1 auto;
+}
