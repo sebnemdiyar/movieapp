@@ -18,13 +18,16 @@ const Page = async ({ searchParams }) => {
   console.log(data, "data")
 
   return (
-    <div className="flex items-center justify-center flex-wrap gap-3">
-      {
-        data?.results?.map((dt, i) => (
-          <Movies key={i} dt={dt} />
-        ))
-      }
-    </div>)
+    <main className="w-full overflow-x-hidden px-4">
+      <div className="flex items-center justify-center flex-wrap gap-3">
+        {
+          data?.results?.map((dt, i) => (
+            <Movies key={i} dt={dt} />
+          ))
+        }
+      </div>
+    </main>
+  )
 }
 
 export default Page;

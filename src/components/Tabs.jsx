@@ -28,7 +28,7 @@ const Tabs = () => {
         <div className="p-5 m-5 bg-gray-100 dark:bg-gray-900 flex items-center justify-center gap-7">
             {
                 tabs.map((tab, i) => (
-                    <Link className={`cursor-pointer hover:opacity-75 transition-opacity ${tab.url === genre ? "underline underline-offset-8 text-amber-600" : ""}`} href={`/?genre=${tab.url}`}>
+                    <Link key={i} className={`cursor-pointer hover:opacity-75 transition-opacity ${tab.url === genre ? "underline underline-offset-8 text-amber-600" : "text-gray-800"}`} href={`/?genre=${tab.url}`}>
                         {tab.name}
                     </Link>
                 ))

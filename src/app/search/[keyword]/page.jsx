@@ -12,19 +12,22 @@ const Page = async ({ params }) => {
     console.log(data?.results, "data")
 
     return (
-        <div>
-            {
-                !data?.results ?
-                    <div>Aranılan şey bulunamadı!!!</div> :
-                    <div className="flex items-center flex-wrap gap-3">
-                        {
-                            data?.results?.map((dt, i) => (
-                                <Movies key={i} dt={dt} />
-                            ))
-                        }
-                    </div>
-            }
-        </div>
+        <main className="w-full overflow-x-hidden px-4">
+            <div>
+                {
+                    !data?.results ?
+                        <div>Aranılan şey bulunamadı!!!</div> :
+                        <div className="flex items-center justify-evenly flex-wrap gap-3">
+                            {
+                                data?.results?.map((dt, i) => (
+                                    <Movies key={i} dt={dt} />
+                                ))
+                            }
+                        </div>
+                }
+            </div>
+        </main>
+
     )
 }
 
