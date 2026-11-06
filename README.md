@@ -19,3 +19,4 @@ MovieApp, kullanıcıların filmleri keşfetmesini, film içeriklerini incelemes
 * Tailwind CSS
 
 ## Ekran Görüntüsü
+<img width="800" height="450" alt="movieapp" src="https://github.com/user-attachments/assets/6bc9441e-1041-4b3a-bab9-b41c9796b5cc" />
